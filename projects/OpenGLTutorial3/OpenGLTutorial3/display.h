@@ -17,6 +17,7 @@ public:
     Display(int width, int height, const char* title);
     virtual ~Display();
 
+    void OpenWindow(int argc, char* argv[]);
     // update function to swap between the two buffers and check event status
     void update();
 

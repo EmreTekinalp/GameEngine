@@ -1,6 +1,4 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(400,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build.
-  mesh.cpp
-  main.cpp
-  display.cpp
-  Generating Code...
-  OpenGLTutorial3.vcxproj -> E:\GitHub\GameEngine\projects\OpenGLTutorial3\Debug\OpenGLTutorial3.exe
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall QApplication::QApplication(int &,char * *,int)" (__imp_??0QApplication@@QAE@AAHPAPADH@Z) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall QApplication::~QApplication(void)" (__imp_??1QApplication@@UAE@XZ) referenced in function _main
+E:\GitHub\GameEngine\projects\OpenGLTutorial3\Debug\OpenGLTutorial3.exe : fatal error LNK1120: 2 unresolved externals

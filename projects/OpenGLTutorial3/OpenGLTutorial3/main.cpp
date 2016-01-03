@@ -1,8 +1,10 @@
 #include "display.h"
 #include "mesh.h"
+#include <QtWidgets\qapplication.h>
 
 void main(int argc, char* argv[])
 {
+    QApplication app(argc, argv);
     // call and create sdl/opengl window
     Display display(800, 600, "VisualStudio2015 - Baby");
     GLfloat verts[] =

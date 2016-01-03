@@ -1,6 +1,6 @@
 #ifndef QT_QTDBUS_MODULE_H
 #define QT_QTDBUS_MODULE_H
-#include <QtCore/QtCore>
+#include <QtDBus/QtDBusDepends>
 #include "qdbusabstractadaptor.h"
 #include "qdbusabstractinterface.h"
 #include "qdbusargument.h"
@@ -20,4 +20,5 @@
 #include "qdbusservicewatcher.h"
 #include "qdbusunixfiledescriptor.h"
 #include "qdbusvirtualobject.h"
+#include "qtdbusversion.h"
 #endif

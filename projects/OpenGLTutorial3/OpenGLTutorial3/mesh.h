@@ -27,6 +27,12 @@ public:
     virtual ~Mesh();
 
     void installShader();
+    bool checkStatus(GLuint objectID,
+                     PFNGLGETSHADERIVPROC objectPropertyGetterFunc,
+                     PFNGLGETSHADERINFOLOGPROC getInfoLogFunc,
+                     GLenum statusType);
+    bool checkShaderStatus(GLuint shaderID);
+    bool checkProgramStatus(GLuint programID);
     void draw();
 private:
     Mesh(Mesh& other) {} // copy constructor

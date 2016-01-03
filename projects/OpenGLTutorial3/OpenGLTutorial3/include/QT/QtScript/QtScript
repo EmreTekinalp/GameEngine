@@ -1,6 +1,6 @@
 #ifndef QT_QTSCRIPT_MODULE_H
 #define QT_QTSCRIPT_MODULE_H
-#include <QtCore/QtCore>
+#include <QtScript/QtScriptDepends>
 #include "qscriptable.h"
 #include "qscriptclass.h"
 #include "qscriptclasspropertyiterator.h"
@@ -14,4 +14,6 @@
 #include "qscriptstring.h"
 #include "qscriptvalue.h"
 #include "qscriptvalueiterator.h"
+#include "qtscriptglobal.h"
+#include "qtscriptversion.h"
 #endif

@@ -1,9 +1,7 @@
 #ifndef QT_QTDECLARATIVE_MODULE_H
 #define QT_QTDECLARATIVE_MODULE_H
-#include <QtCore/QtCore>
-#include <QtGui/QtGui>
-#include <QtScript/QtScript>
-#include <QtNetwork/QtNetwork>
+#include <QtDeclarative/QtDeclarativeDepends>
+#include "qtdeclarativeglobal.h"
 #include "qdeclarativedebug.h"
 #include "qdeclarativeitem.h"
 #include "qdeclarative.h"
@@ -26,4 +24,5 @@
 #include "qdeclarativescriptstring.h"
 #include "qdeclarativepropertymap.h"
 #include "qdeclarativeview.h"
+#include "qtdeclarativeversion.h"
 #endif
