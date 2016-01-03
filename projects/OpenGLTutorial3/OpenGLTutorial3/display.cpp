@@ -63,40 +63,9 @@ bool Display::isClosed()
     return quit;
 }
 
-void Display::setVertices(GLfloat* verts)
+void Display::drawBackground(float r, float g, float b, float a)
 {
-    gl_vertices = verts;
-}
-
-GLfloat* Display::getVertices()
-{
-    return gl_vertices;
-}
-
-void Display::initializeGL(GLfloat* verts, unsigned int numVertices)
-{
-    GLuint myBufferID;
-    //Create a buffer
-    glGenBuffers(1, &myBufferID);
-    //Bind the buffer to the array buffer point
-    glBindBuffer(GL_ARRAY_BUFFER, myBufferID);
-    //Create buffer data to send information
-    glBufferData(GL_ARRAY_BUFFER, sizeof(verts) * numVertices, verts, GL_STATIC_DRAW);
-    //Enable vertex position array attribute
-    glEnableVertexAttribArray(0);
-    //Describe our data to opengl
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, 0);
-}
-
-void Display::paintGL(float r, float g, float b, float a)
-{
-    while (!Display::isClosed())
-    {
-        // Color the background
-        glClearColor(r, g, b, a);
-        glClear(GL_COLOR_BUFFER_BIT);
-        // draw triangle
-        glDrawArrays(GL_TRIANGLES, 0, 3);
-        Display::update();
-    } // end while not window closed do opengl stuff
+    // Color the background
+    glClearColor(r, g, b, a);
+    glClear(GL_COLOR_BUFFER_BIT);
 }

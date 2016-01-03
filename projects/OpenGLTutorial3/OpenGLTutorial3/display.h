@@ -24,10 +24,7 @@ public:
     bool isClosed();
 
     // setup display function
-    void setVertices(GLfloat* verts);
-    GLfloat* getVertices();
-    void initializeGL(GLfloat* verts, unsigned int numVertices);
-    void paintGL(float r, float g, float b, float a);
+    void drawBackground(float r, float g, float b, float a);
 private:
     // copy constructor
     Display(Display& other) {}
